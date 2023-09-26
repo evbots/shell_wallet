@@ -38,6 +38,6 @@ cmd="${commands[$choice-1]}"
 if $execute; then
   eval "$cmd"
 else
-  echo "$cmd" | pbcopy
+  echo -n "$cmd" | pbcopy
   echo "Command copied to clipboard."
 fi
